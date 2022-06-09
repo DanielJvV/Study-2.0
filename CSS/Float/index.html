@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+
+    <style type="text/css">
+        #first-section {
+            background-color: lightblue;
+            width: 200px;
+            float: left;
+        }
+
+        #second-section {
+            background-color: lightcoral;
+            width: 200px;
+            float: right;
+        }
+
+        #third-section {
+            background-color: lightgreen;
+            width: 200px;
+        }
+
+        .clear-float {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Float</h1>
+    <div id="first-section">
+        <h2>Section 1</h2>
+        <p>Floating right</p>
+        <p>This is paragraph one.</p>
+        <p>This is paragraph two.</p>
+    </div>
+    <div id="second-section">
+        <h2>Section 2</h2>
+        <p>Floating left</p>
+        <p>This is paragraph three.</p>
+        <p>This is paragraph four.</p>
+    </div>
+    <div class="clear-float"></div>
+    <div id="third-section">
+        <h2>Section 3</h2>
+        <p>Not floating</p>
+        <p>This is paragraph five.</p>
+        <p>This is paragraph six.</p>
+    </div>
+</body>
+
+</html>

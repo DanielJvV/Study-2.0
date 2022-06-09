@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative Positioning</title>
+
+    <style type="text/css">
+        #first-section {
+            background-color: lightblue;
+            width: 200px;
+            position: relative;
+            /* We are going to change it's position reletive to where it would have been. */
+            left: 100px;
+            top: 100px;
+            z-index: 2;
+            /* Puts section 1 infront of section 2 because the z-index is higher. */
+            opacity: 0.5;
+            /* Opacity makes the section see-through 1 is solid and 0.1 or 0.5 is see-through */
+        }
+
+        #second-section {
+            background-color: lightcoral;
+            width: 200px;
+            position: relative;
+            left: 100px;
+            top: -100px;
+            z-index: 1;
+            /* Puts section 2 behind section 1 because the z-index is lower. */
+
+        }
+
+        #third-section {
+            background-color: lightgreen;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Relative Positioning</h1>
+    <div id="first-section">
+        <h2>Section 1</h2>
+        <p>This is paragraph one.</p>
+        <p>This is paragraph two.</p>
+    </div>
+    <div id="second-section">
+        <h2>Section 2</h2>
+        <p>This is paragraph three.</p>
+        <p>This is paragraph four.</p>
+    </div>
+    <div id="third-section">
+        <h2>Section 3</h2>
+        <p>This is paragraph five.</p>
+        <p>This is paragraph six.</p>
+    </div>
+</body>
+
+</html>
