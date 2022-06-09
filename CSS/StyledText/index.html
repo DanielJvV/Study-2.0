@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Text</title>
+
+    <style type="text/css">
+        .bold {
+            font-weight: bold;
+        }
+
+        .italic {
+            font-style: italic;
+        }
+
+        .underlined {
+            text-decoration: underline;
+        }
+
+        .not-underlined {
+            text-decoration: none;
+        }
+        .hoverlink:hover {
+            text-decoration: none;
+            color: red;
+        }
+
+        .big {
+            font-size: 200%;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Styled Text</h1>
+
+    <p class="bold">This is some bold text.</p>
+
+    <p class="italic">This is some italic text. <span class="bold">This text is both bold and italic.</span></p>
+
+    <p class="underlined">This text is underlined.</p>
+
+    <a href="" class="not-underlined">This is a non-underlined link.</a>
+    <!-- Removes the underline from an anchor tag or link. Links are underlined by default -->
+
+    <a href="" class="hoverlink">Hover underlined link.</a>
+
+    <p class="big">This text is big!</p>
+
+
+</body>
+
+</html>

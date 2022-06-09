@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padding</title>
+
+    <!-- Padding works on the inside of the element -->
+    <!-- Padding adds to the width of and height an element -->
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        /* Resets all the browser padding and margin defaults to 0 */
+
+        #first-section {
+            background-color: lightblue;
+            width: 200px;
+            padding: 5px;
+        }
+
+        #second-section {
+            background-color: lightcoral;
+            width: 200px;
+            padding: 20px 15px 10px 5px;
+            /* padding: top right bottom left; */
+
+        }
+
+        #third-section {
+            background-color: lightgreen;
+            width: 200px;
+            padding-top: 10px;
+            padding-right: 5px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            box-sizing: border-box;
+            /* Border-box, Does not add the padding to the width or height, instead it adds it on the inside. */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Padding</h1>
+    <div id="first-section">
+        <h2>Section 1</h2>
+        <p>This is paragraph one.</p>
+        <p>This is paragraph two.</p>
+    </div>
+    <div id="second-section">
+        <h2>Section 2</h2>
+        <p>This is paragraph three.</p>
+        <p>This is paragraph four.</p>
+    </div>
+    <div id="third-section">
+        <h2>Section 3</h2>
+        <p>This is paragraph five.</p>
+        <p>This is paragraph six.</p>
+    </div>
+</body>
+
+</html>

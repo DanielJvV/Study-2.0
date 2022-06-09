@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margins</title>
+
+    <!-- margins also melts together! They don't add up! -->
+
+    <style type="text/css">
+        #first-section {
+            background-color: lightblue;
+            width: 200px;
+            margin: 100px 50px 50px 50px;
+            /* margin: top right bottom left; */
+            /* margin: 100px; All sides */
+            /* margin: top/bottom sides; */
+        }
+
+        #second-section {
+            background-color: lightcoral;
+            width: 200px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            margin-left: 100px;
+            margin-right: 100px;
+
+        }
+
+        #third-section {
+            background-color: lightgreen;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Margins</h1>
+    <div id="first-section">
+        <h2>Section 1</h2>
+        <p>This is paragraph one.</p>
+        <p>This is paragraph two.</p>
+    </div>
+    <div id="second-section">
+        <h2>Section 2</h2>
+        <p>This is paragraph three.</p>
+        <p>This is paragraph four.</p>
+    </div>
+    <div id="third-section">
+        <h2>Section 3</h2>
+        <p>This is paragraph five.</p>
+        <p>This is paragraph six.</p>
+    </div>
+</body>
+
+</html>

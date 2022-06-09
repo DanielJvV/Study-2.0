@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borders</title>
+
+    <!-- Borders add to the width of an element! -->
+
+    <style type="text/css">
+        #square-red {
+            background-color: red;
+            border: 5px black solid;
+            /* border: width color style; */
+        }
+
+        #square-blue {
+            background-color: blue;
+            border-width: 5px 10px 8px 20px;
+            border-style: ridge solid dotted dashed;
+            border-color: red orange yellow green;
+            /* Can also use boder-left, border-top, etc. */
+        }
+
+        #square-green {
+            background-color: green;
+            border-radius: 20px;
+            /* border-radius: 50%; Makes a circle */
+        }
+
+        .square {
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Borders</h1>
+
+    <div id="square-red" class="square">
+    </div>
+
+    <div id="square-blue" class="square">
+    </div>
+
+    <div id="square-green" class="square">
+    </div>
+
+</body>
+
+</html>
