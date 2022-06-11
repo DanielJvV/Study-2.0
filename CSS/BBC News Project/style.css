@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+#topbar {
+    width: 1000px;
+    margin: 0 auto;
+    height: 40px;
+}
+
+#logo {
+    width: 100px;
+    margin-top: 8px;
+    margin-right: 8px;
+    float: left;
+}
+
+.topbar-section {
+    float: left;
+    border-left: 1px #CCCCCC solid;
+    height: 100%;
+}
+
+#signin-image {
+    width: 25px;
+    margin: 8px 15px;
+    float: left;
+}
+
+#signin-text {
+    font-weight: bold;
+    font-size: 90%;
+    position: relative;
+    top: 13px;
+    padding-right: 50px;
+}
+
+#bell-image {
+width: 25px;
+margin: 9px 9px;
+}
+
+#bell-div {
+    float: left;
+}
+
+.topbar-menu {
+    font-weight: bold;
+    font-size: 90%;
+    padding: 14px 15px 0 15px;
+    height: 26px;
+}
+
+#search-box {
+    background-color: #E4E4E4;
+    border: none;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 5px;
+    margin: 7px 5px 3px 5px;
+}
