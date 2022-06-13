@@ -5,7 +5,7 @@ body {
 }
 
 #topbar {
-    width: 1000px;
+    width: 935px;
     margin: 0 auto;
     height: 40px;
 }
@@ -38,8 +38,8 @@ body {
 }
 
 #bell-image {
-width: 25px;
-margin: 9px 9px;
+    width: 25px;
+    margin: 9px 9px;
 }
 
 #bell-div {
@@ -60,4 +60,79 @@ margin: 9px 9px;
     font-size: 14px;
     padding: 5px;
     margin: 7px 5px 3px 5px;
+}
+
+.clear {
+    clear: both;
+}
+
+#menu-bar-container {
+    background-color: #BB1919;
+    width: 100%;
+    height: 70px;
+}
+
+#menu-bar {
+    width: 935px;
+    margin: 0 auto;
+    border-top: 1px solid #CCCCCC;
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-size: 40px;
+    font-weight: normal;
+    padding-top: 10px;
+    float: left;
+}
+
+#local-news {
+    float: right;
+    width: 180px;
+    font-size: 26px;
+    border: 1px solid #BB4545;
+    padding: 5px 5px 5px 5px;
+    text-align: center;
+    margin-top: 8px;
+}
+
+#local-news a {
+    color: white;
+    text-decoration: none;
+
+}
+
+#local-news a:hover {
+    text-decoration: underline;
+}
+
+#menu-bar-2-container {
+    background-color: #A91717;
+    width: 100%;
+}
+
+#menu-bar-2 {
+    width: 935px;
+    margin: 0 auto;
+    height: 40px;
+}
+
+#menu-bar-2 a {
+    color: white;
+    text-decoration: none;
+    padding: 0 10px;
+    border-right: 1px solid #BB4545;
+    font-size: 14px;
+    position: relative;
+    top: 9px;
+}
+
+#menu-bar-2 a:hover {
+    text-decoration: underline;
+}
+
+#menu-bar-2 .no-border {
+    border: none;
 }
