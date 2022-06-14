@@ -5,7 +5,7 @@ body {
 }
 
 #topbar {
-    width: 935px;
+    width: 980px;
     margin: 0 auto;
     height: 40px;
 }
@@ -13,7 +13,7 @@ body {
 #logo {
     width: 100px;
     margin-top: 8px;
-    margin-right: 8px;
+    margin-right: 20px;
     float: left;
 }
 
@@ -39,7 +39,7 @@ body {
 
 #bell-image {
     width: 25px;
-    margin: 9px 9px;
+    margin: 9px 15px;
 }
 
 #bell-div {
@@ -59,7 +59,7 @@ body {
     font-weight: bold;
     font-size: 14px;
     padding: 5px;
-    margin: 7px 5px 3px 5px;
+    margin: 7px 5px 3px 15px;
 }
 
 .clear {
@@ -73,7 +73,7 @@ body {
 }
 
 #menu-bar {
-    width: 935px;
+    width: 980px;
     margin: 0 auto;
     border-top: 1px solid #CCCCCC;
 }
@@ -114,7 +114,7 @@ h1 {
 }
 
 #menu-bar-2 {
-    width: 935px;
+    width: 980px;
     margin: 0 auto;
     height: 40px;
 }
@@ -136,3 +136,110 @@ h1 {
 #menu-bar-2 .no-border {
     border: none;
 }
+
+#page-container {
+    width: 980px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-weight: normal;
+    margin-top: 40px;
+    font-size: 20px;
+    border-bottom: 2px solid #A91717;
+    width: 105px;
+}
+
+h3 {
+    margin-top: 0;
+}
+
+h3 a {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    
+}
+
+h3 a:hover {
+    color: #1167A8;
+}
+
+#article-summary {
+    color: #A5A5A5;
+    width: 250px;
+    float: left;
+    margin-right: 10px;
+}
+
+#tech-link {
+    color: #A91717;
+    text-decoration: none;
+    border-left: 1px solid #CCCCCC;
+    padding-left: 10px;
+}
+
+#tech-link:hover {
+    color: #1167A8;
+}
+
+#date {
+    padding-right: 10px;
+}
+
+#article-container {
+    float: left;
+    width: 665px;
+    border-bottom: 1px solid #CCCCCC;
+   
+}
+
+#article-container img {
+    width: 400px;
+}
+
+.article-links {
+    color: black;
+    text-decoration: none;
+}
+
+.article-links:hover {
+    color: #1167A8;
+}
+
+#watch-container {
+    float: right;
+    width: 300px;
+    border-left: 1px solid #CCCCCC;
+}
+
+h4 {
+    font-weight: normal;
+    font-size: 25px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-left: 15px;
+}
+
+.watch-div {
+    padding-left: 15px;
+}
+
+.watch-div img {
+    float: left;
+    padding-right: 5px;
+}
+
+.watch-date {
+    font-size: 13px;
+}
+
+.watch-div a {
+    text-decoration: none;
+    color: black;
+}
+
+.watch-div a:hover {
+    color: #1167A8;
+}
+
