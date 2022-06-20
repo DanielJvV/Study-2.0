@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+
+<body>
+    <h1>Appending</h1>
+
+    <p id="text">Hello World!</p>
+
+    <button id="button">Append Text</button>
+    <p id="blankText"></p>
+
+    <button id="button2">Make Magic!</button>
+
+    <script type="text/javascript">
+        const text = document.getElementById("text");
+        const button = document.getElementById("button");
+        button.addEventListener("click", function () {
+            text.innerHTML = `${text.innerHTML} It's me Daniel!`;
+        });
+
+        const blankText = document.getElementById("blankText");
+        const button2 = document.getElementById("button2");
+        button2.addEventListener("click", function () {
+            blankText.innerHTML = "This paraghraph magically appeared!";
+        });
+    </script>
+</body>
+
+</html>
