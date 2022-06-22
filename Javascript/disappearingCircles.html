@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disappearing Circles</title>
+
+    <style type="text/css">
+        .circle {
+            height: 130px;
+            width: 130px;
+            border-radius: 50%;
+            margin: 10px;
+            float: left;
+        }
+
+        #circle1 {
+            background-color: red;
+        }
+
+        #circle2 {
+            background-color: orange;
+        }
+
+        #circle3 {
+            background-color: yellow;
+        }
+
+        button {
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Making cirlces disappear!</h1>
+
+    <div id="circle1" class="circle"></div>
+
+    <div id="circle2" class="circle"></div>
+
+    <div id="circle3" class="circle"></div>
+
+
+
+    <script type="text/javascript">
+        const red = document.getElementById("circle1");
+        const orange = document.getElementById("circle2");
+        const yellow = document.getElementById("circle3");
+
+        red.onclick = function () {
+            red.style.display = "none";
+        };
+
+        orange.onclick = function () {
+            orange.style.display = "none";
+        };
+
+        yellow.onclick = function () {
+            yellow.style.display = "none";
+        };
+    </script>
+</body>
+
+</html>
