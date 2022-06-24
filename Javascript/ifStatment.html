@@ -1,0 +1,47 @@
+<html>
+
+<head>
+
+    <title>Javascript</title>
+
+</head>
+
+<body>
+
+
+
+    <p>What is the magic word?</p>
+
+    <p><input type="text" id="magicWord"></p>
+
+    <p><button id="checkMagicWord">Enter</button></p>
+
+    <script type="text/javascript">
+        // == is less accurate than === (== can convert a string into a number to check if that might be the same)
+        // === will not accept "2" as 2
+
+        document.getElementById("checkMagicWord").onclick = function () {
+
+            var magicWordEntered = document.getElementById("magicWord").value;
+
+            var magicWord = "abracadabra";
+
+            if (magicWordEntered == magicWord) {
+
+                alert("You got it!");
+
+            } else {
+
+                alert("Nope, try again!");
+
+            }
+
+        }
+    </script>
+
+
+
+    <div id="torrent-scanner-popup" style="display: none;"></div>
+</body>
+
+</html>
