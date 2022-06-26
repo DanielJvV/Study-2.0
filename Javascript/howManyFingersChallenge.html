@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How many fingers?</title>
+</head>
+
+<body>
+    <p>How many fingers am I holding up?</p>
+    <input id="userInput" type="text"> <button id="btn">Guess</button>
+
+    <script type="text/javascript">
+        const button = document.getElementById("btn");
+
+
+        btn.onclick = function () {
+            const userValue = document.getElementById("userInput").value;
+            const randomNum = Math.floor(Math.random() * 6);
+
+            if (userValue == randomNum) {
+                alert(`Yes, I was holding up ${randomNum}! You win!`);
+            } else {
+                alert(`No, Sorry I was holding up ${randomNum}. You lose!`);
+            };
+        };
+    </script>
+</body>
+
+</html>
