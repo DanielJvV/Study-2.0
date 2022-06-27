@@ -1,0 +1,40 @@
+<html>
+
+<head>
+
+    <title>Javascript</title>
+
+</head>
+
+<body>
+
+    <div id="tweetDiv">
+        <p>Hi everyone!</p>
+        <p>I love cornflakes!</p>
+        <p>Night night :)</p>
+        <p>Sweet dreams!</p>
+    </div>
+
+    <script type="text/javascript">
+
+        //let and const variables are better.
+        
+        var tweetString = "";
+
+        var tweets = ["Hi everyone!", "I love cornflakes!", "Night night :)", "Sweet dreams!"];
+
+        for (var i = 0; i < tweets.length; i++) {
+
+            tweetString = tweetString + "<p>" + tweets[i] + "</p>";
+
+        }
+
+        document.getElementById("tweetDiv").innerHTML = tweetString;
+    </script>
+
+
+
+    <div id="torrent-scanner-popup" style="display: none;"></div>
+</body>
+
+</html>
