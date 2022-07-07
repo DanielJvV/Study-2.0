@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="./downloadedJquery/jquery-3.6.0.js"></script>
+    <style type="text/css">
+        #circle {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            border-radius: 50%;
+            margin: 5px;
+
+        }
+
+        .square {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin: 5px;
+
+        }
+
+        #in {
+            display: none;
+        }
+    </style>
+    <title>JQuery</title>
+</head>
+
+<body>
+    <h1>Fading Content</h1>
+
+    <div id="circle"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+
+    <p id="out">This will fade when you click the button!</p>
+    <button id="btnOut">Fade Out!</button>
+
+    <p id="in">This has faded in!</p>
+    <button id="btnIn">Fade In!</button>
+
+    <p id="toggle">This text can fade in and out!</p>
+    <button id="toggleBtn">Fade In or Out</button>
+
+    <script type="text/javascript">
+        $("div").click(function () {
+            $(this).fadeOut("slow",
+                function () { // Callback function. Runs after fade is completed! FadeOut is also going to hide the element!
+                    alert("Faded!");
+                });
+            // $(this).hide();  Like display to none.
+
+        });
+
+        $("#btnOut").click(function () {
+            $("#out").fadeOut("slow");
+        });
+
+        $("#btnIn").click(function () {
+            $("#in").fadeIn();
+        });
+
+        $("#toggleBtn").click(function () {
+            $("#toggle").toggle();
+        });
+    </script>
+</body>
+
+</html>
