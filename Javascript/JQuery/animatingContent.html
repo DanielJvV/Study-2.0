@@ -28,11 +28,20 @@
     <div id="circle"></div>
 
     <script type="text/javascript">
+        $("#circle").click(function () {
+            $(this).animate({ //Styles you want to change in {}
+                    width: "400px",
+                    height: "400px",
+                    marginLeft: "100px",
+                    marginTop: "100px",
 
-$("#circle").click(function () {
+                },
+                2000, //Time to complete animation
+                function () { //Callback function
+                    $(this).css("background-color", "red");
+                });
 
-});
-
+        });
     </script>
 
 </body>
