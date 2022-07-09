@@ -4,17 +4,18 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>AJAX</title>
-    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script type="text/javascript" src="../Javascript/JQuery/downloadedJquery/jquery-3.6.0.js"></script>
-
+    <script src="../Javascript/JQuery/downloadedJquery/jquery-3.6.0.js"></script>
+    <title>AJAX</title>
 </head>
 
 <body>
-
-
-    <script type="text/javascript"></script>
+    <h1>AJAX Get Info Text</h1>
+    <script type="text/javascript">
+        $.get("info.txt", function (data) {
+            alert(data);
+        });
+    </script>
 </body>
 
 </html>
