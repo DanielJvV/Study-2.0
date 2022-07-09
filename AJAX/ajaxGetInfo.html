@@ -11,11 +11,22 @@
 
 <body>
     <h1>AJAX Get Info Text</h1>
+    <p id="info"></p>
     <script type="text/javascript">
-        $.get("info.txt", function (data) {
-            alert(data);
-        });
+        // $.get("info.txt", function (data) {
+        //     alert(data);
+        // });
+
+        $.ajax("info.txt")
+            .done(function (data) {
+                $("#info").html(data);
+            })
+            .fail(function () {
+                alert("Could not load data!");
+            });
+
     </script>
+
 </body>
 
 </html>
