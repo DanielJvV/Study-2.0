@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="./JQuery/downloadedJquery/jquery-3.6.0.js"></script>
+    <style type="text/css">
+        body {
+            font-family: Helvetica, sans-serif;
+            font-size: 150%;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        label {
+            position: relative;
+            top: 12px;
+            width: 220px;
+            float: left;
+        }
+
+        input {
+            height: 40px;
+            padding: 5px;
+            font-size: 25px;
+            border-radius: 5px;
+            border: 1px solid grey;
+
+        }
+
+        #container {
+            width: 550px;
+            margin: 0 auto;
+        }
+
+        .inputs {
+            margin-bottom: 10px;
+        }
+
+        #btn {
+            width: 200px;
+            height: 40px;
+            margin: 0px 175px;
+            font-size: 25px;
+            border-radius: 5px;
+        }
+
+        #btn:hover {
+            color: green;
+            text-decoration: underline;
+        }
+
+        #error {
+            font-size: 15px;
+            color: red;
+
+        }
+
+        #success {
+            font-size: 25px;
+            color: green;
+        }
+    </style>
+    <title>Form Validation</title>
+</head>
+
+<body>
+    <div id="container">
+        <h1>Form Validation</h1>
+        <div id="error"></div>
+        <div id="success"></div>
+        <div class="inputs">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="yourname@gmail.com">
+        </div>
+        <div class="inputs">
+            <label for="telephone">Telephone:</label>
+            <input type="number" name="telephone" id="telephone" placeholder="083000000">
+        </div>
+        <div class="inputs">
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password">
+        </div>
+        <div class="inputs">
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" name="confirmPassword" id="confirmPassword">
+        </div>
+        <div class="inputs">
+            <button id="btn">Sign Up</button>
+        </div>
+    </div>
+
+
+
+    <script type="text/javascript">
+
+        const isEmail = function (email) {
+            const regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+            return regex.test(email);
+        };
+
+        const isNumber = function (number) {
+            const regex = /^(((\+44\s?\d{4}|\(?0\d{4}\)?)\s?\d{3}\s?\d{3})|((\+44\s?\d{3}|\(?0\d{3}\)?)\s?\d{3}\s?\d{4})|((\+44\s?\d{2}|\(?0\d{2}\)?)\s?\d{4}\s?\d{4}))(\s?\#(\d{4}|\d{3}))?$/;
+            return regex.test(number);
+        }
+
+        $("#btn").click(function () {
+
+            let errorMsg = "";
+
+            if (isEmail($("#email").val()) === false) {
+                errorMsg = errorMsg + "<p>Invalid Email Address!</p>";
+            };
+
+            if (isNumber($("#telephone").val()) === false) {
+                errorMsg = errorMsg + "<p>Invalid Telephone Number!</p>";
+            };
+
+            if ($("#password").val() !== $("#confirmPassword").val()) {
+                errorMsg = errorMsg + "<p>Passwords do not match!</p>";
+            };
+
+            if ($("#password").val() === "") {
+                errorMsg = errorMsg + "<p>Password can't be empty!</p>";
+            }
+
+
+            if (errorMsg !== "") {
+                $("#error").html(errorMsg);
+            } else {
+                $("#success").html("<p>You have successfully signed up!</p>")
+            }
+        });
+
+    </script>
+</body>
+
+</html>

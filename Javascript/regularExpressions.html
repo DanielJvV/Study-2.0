@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="./JQuery/downloadedJquery/jquery-3.6.0.js"></script>
+    <title>Regex</title>
+</head>
+
+<body>
+    <h1>Regular Expressions</h1>
+
+    <script type="text/javascript">
+        const regex = /is/; // /is/i : the i is for case insenitive. /is/g : global flag checks how many times is apears in the string.
+        const string = "Regex is great!";
+        const result = string.match(regex); //Does the word is appear in the string? match doesn't return true/false. It would return the match. (is). Returns null if it can't find a match
+        alert(result);
+
+
+    </script>
+</body>
+
+</html>
