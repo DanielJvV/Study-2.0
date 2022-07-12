@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="./jquery-ui-1.13.1/external/jquery/jquery.js"></script>
+    <script type="text/javascript" src="./jquery-ui-1.13.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="./jquery-ui-1.13.1/jquery-ui.css">
+    <style type="text/css">
+        #draggable {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: green;
+            color: white;
+            text-align: center;
+            margin: 5px;
+        }
+
+        #draggable p {
+            padding-top: 65px;
+        }
+
+        #draggable2 {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: red;
+            color: white;
+            text-align: center;
+            margin: 5px;
+        }
+
+        #draggable2 p {
+            padding-top: 65px;
+        }
+
+        #drag-container {
+            width: 50%;
+            height: 300px;
+            border: solid 3px black;
+        }
+
+        #draggable3 {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: blue;
+            color: white;
+            text-align: center;
+            margin: 5px;
+        }
+
+        #draggable3 p {
+            padding-top: 65px;
+        }
+
+        #draggable4 {
+            width: 300px;
+            height: 300px;
+            background-color: yellow;
+            color: black;
+            text-align: center;
+            margin: 5px;
+        }
+
+        #draggablePara {
+            width: 25%;
+            margin: 0;
+            background-color: gray;
+        }
+
+        #resizable {
+            width: 300px;
+            height: 300px;
+            background-color: orange;
+            color: black;
+            text-align: center;
+            margin: 5px;
+        }
+
+        #resizable p {
+            padding: 40%;
+        }
+    </style>
+    <title>JQuery</title>
+</head>
+
+<body>
+    <h1>JQuery UI</h1>
+
+    <div id="resizable">
+        <p>I'm resizable!</p>
+    </div>
+    <div id="draggable">
+        <p>Draggable Up & Down</p>
+    </div>
+
+    <div id="draggable2">
+        <p>Draggable left & right</p>
+    </div>
+
+    <div id="drag-container">
+        <div id="draggable3">
+            <p>Drag me insdie my box!</p>
+        </div>
+    </div>
+    <div id="draggable4">
+        <p id="draggablePara">Drag me in my parent box!</p>
+    </div>
+
+    <script type="text/javascript">
+        $(function () {
+            $("#draggable").draggable({ axis: "y" });
+            $("#draggable2").draggable({ axis: "x" });
+            $("#draggable3").draggable({ containment: "#drag-container", scroll: false });
+            $("#draggablePara").draggable({ containment: "#draggable4" });
+            $("#resizable").resizable(
+                {
+                    maxHeight: 500,
+                    maxWidth: 500,
+                    minHeight: 100,
+                    minWidth: 100
+                });
+
+        });
+    </script>
+</body>
+
+</html>
