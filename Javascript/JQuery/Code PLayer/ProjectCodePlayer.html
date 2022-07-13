@@ -10,62 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shadows+Into+Light&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../JQuery UI/jquery-ui-1.13.1/jquery-ui.css">
-    <style type="text/css">
-        * {
-            margin: 0;
-        }
-
-        nav {
-            background-color: lightgray;
-            height: 40px;
-            font-family: 'Roboto', sans-serif;
-            padding: 4px 0;
-        }
-
-        h1 {
-            float: left;
-            margin: 4px 0 0 0;
-        }
-
-        #nav-options {
-            height: 30px;
-            margin-top: 4px;
-            margin-left: calc(50% - 75px);
-            border: 1px solid black;
-            border-radius: 3px;
-            width: 246px;
-            text-align: center;
-        }
-
-        #nav-options p {
-            float: left;
-            padding: 6px 6px;
-            border-right: 1px solid black;
-        }
-
-        #output-nav {
-            border-right: none !important;
-        }
-
-        #display1 {
-            width: 50%;
-            height: 100vh;
-            float: left;
-            border-right: 1px solid black;
-        }
-
-        #display2 {
-            width: 30%;
-            height: 100vh;
-        }
-
-        textarea {
-            width: 100%;
-            height: 100vh;
-            border: none;
-            border-right: 1px solid black;
-        }
-    </style>
+    <link rel="stylesheet" href="./ProjectCodePlayes.css">
     <title>Project Code Player</title>
 </head>
 
@@ -73,22 +18,27 @@
     <nav>
         <h1>CodePlayer</h1>
         <div id="nav-options">
-            <p>HTML</p>
-            <p>CSS</p>
-            <p>Javascript</p>
-            <p id="output-nav">Output</p>
+            <a id="html-btn">HTML</a>
+            <a id="css-btn">CSS</a>
+            <a id="java-btn">Javascript</a>
+            <a id="output-btn">Output</a>
         </div>
     </nav>
 
-    <div id="display1">
-        <textarea></textarea>
+    <div id="html-display" class="display">
+        <p>HTML</p>
     </div>
-    <div id="display2"></div>
+    <div id="css-display" class="display">
+        <p>CSS</p>
+    </div>
+    <div id="java-display" class="display">
+        <p>JAVA</p>
+    </div>
+    <div id="output-display" class="display">
+        <p>OUTPUT</p>
+    </div>
 
-
-    <script type="text/javascript">
-
-    </script>
+    <script src="./ProjectCodePlayer.js"></script>
 </body>
 
 </html>
