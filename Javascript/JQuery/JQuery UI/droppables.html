@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="./jquery-ui-1.13.1/external/jquery/jquery.js"></script>
+    <script type="text/javascript" src="./jquery-ui-1.13.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="./jquery-ui-1.13.1/jquery-ui.css">
+    <style type="text/css">
+        #big {
+            width: 150px;
+            height: 150px;
+            background-color: green;
+        }
+
+        #small {
+            width: 75px;
+            height: 75px;
+            background-color: yellow;
+        }
+    </style>
+    <title>JQuery</title>
+</head>
+
+<body>
+    <h1>JQuery UI</h1>
+    <h2>Droppables</h2>
+
+    <div id="big">
+        <p>Drop in me!</p>
+    </div>
+    <div id="small">
+        <p>Drop me!</p>
+    </div>
+
+    <script type="text/javascript">
+        $(function () {
+            $("#small").draggable();
+            $("#big").droppable({
+                drop: function () {
+                    alert("You dropped it!");
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

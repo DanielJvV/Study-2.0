@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="./jquery-ui-1.13.1/external/jquery/jquery.js"></script>
+    <script type="text/javascript" src="./jquery-ui-1.13.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="./jquery-ui-1.13.1/jquery-ui.css">
+    <style type="text/css">
+        /* Default styles from the Jquery UI website */
+        #sortable {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 60%;
+        }
+
+        #sortable li {
+            margin: 0 3px 3px 3px;
+            padding: 0.4em;
+            padding-left: 1.5em;
+            font-size: 1.4em;
+            height: 18px;
+        }
+
+        #sortable li span {
+            position: absolute;
+            margin-left: -1.3em;
+        }
+    </style>
+    </style>
+
+    <title>JQuery</title>
+</head>
+
+<body>
+    <h1>JQuery UI</h1>
+    <h2>Accordions</h2>
+    <div id="accordion">
+        <h3>Section 1</h3>
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos necessitatibus molestias suscipit
+                asperiores
+                veniam rem, dolores qui rerum voluptatum nostrum repudiandae totam impedit neque reiciendis quidem
+                voluptates ipsa, harum perferendis? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non
+                dolores obcaecati reprehenderit iusto adipisci perferendis harum numquam, libero laboriosam. Minima
+                magni iste iure animi molestiae accusamus qui quo sunt dolorum.
+            </p>
+        </div>
+        <h3>Section 2</h3>
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos necessi
+                tatibus molestias suscipit asperiores
+                veniam rem, dolores qui rerum voluptatum nostrum repudiandae totam impedit neque reiciendis quidem
+                voluptates ipsa, harum perferendis? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non
+                dolores obcaecati reprehenderit iusto adipisci perferendis harum numquam, libero laboriosam. Minima
+                magni iste iure animi molestiae accusamus qui quo sunt dolorum.
+            </p>
+        </div>
+        <h3>Section 3</h3>
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos necessitatibus molestias suscipit
+                asperiores
+                veniam rem, dolores qui rerum voluptatum nostrum repudiandae totam impedit neque reiciendis quidem
+                voluptates ipsa, harum perferendis? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non
+                dolores obcaecati reprehenderit iusto adipisci perferendis harum numquam, libero laboriosam. Minima
+                magni iste iure animi molestiae accusamus qui quo sunt dolorum.
+            </p>
+        </div>
+        <h3>Section 4</h3>
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos necessitatibus molestias suscipit
+                asperiores
+                veniam rem, dolores qui rerum voluptatum nostrum repudiandae totam impedit neque reiciendis quidem
+                voluptates ipsa, harum perferendis? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non
+                dolores obcaecati reprehenderit iusto adipisci perferendis harum numquam, libero laboriosam. Minima
+                magni iste iure animi molestiae accusamus qui quo sunt dolorum.
+            </p>
+        </div>
+    </div>
+
+    <h2>Sortable List</h2>
+
+    <ul id="sortable">
+        <!-- Classes are from the JQuery UI CSS file. -->
+        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 1</li>
+        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 2</li>
+        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 3</li>
+        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 4</li>
+        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 5</li>
+    </ul>
+
+
+    <script type="text/javascript">
+        $(function () {
+            $("#accordion").accordion();
+            $("#sortable").sortable();
+        });
+    </script>
+</body>
+
+</html>
