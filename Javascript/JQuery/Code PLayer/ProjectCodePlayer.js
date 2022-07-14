@@ -63,3 +63,8 @@ $("#output-btn").click(function () {
 
     adjustDisplay();
 });
+
+$("#html-text").change(function () {
+    const text = $("#html-text").val();
+    $("#render").html(text);
+});

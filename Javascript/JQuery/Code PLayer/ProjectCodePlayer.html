@@ -14,8 +14,8 @@
     <title>Project Code Player</title>
 </head>
 
-<body>
-    <nav>
+<body id="body">
+    <nav id="nav">
         <h1>CodePlayer</h1>
         <div id="nav-options">
             <a id="html-btn">HTML</a>
@@ -26,16 +26,20 @@
     </nav>
 
     <div id="html-display" class="display">
-        <p>HTML</p>
+        <h2>HTML</h2>
+        <textarea id="html-text"></textarea>
     </div>
     <div id="css-display" class="display">
-        <p>CSS</p>
+        <h2>CSS</h2>
+        <textarea></textarea>
     </div>
     <div id="java-display" class="display">
-        <p>JAVA</p>
+        <h2>JAVASCRIPT</h2>
+        <textarea></textarea>
     </div>
     <div id="output-display" class="display">
-        <p>OUTPUT</p>
+        <h2>OUTPUT</h2>
+        <div id="render"></div>
     </div>
 
     <script src="./ProjectCodePlayer.js"></script>
