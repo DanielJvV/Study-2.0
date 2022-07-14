@@ -68,3 +68,14 @@ $("#html-text").change(function () {
     const text = $("#html-text").val();
     $("#render").html(text);
 });
+
+$("#css-text").change(function () {
+    const text = $("#css-text").val();
+    $("#style").html(text);
+});
+
+$("#java-text").change(function () {
+    const text = $("#java-text").val();
+    $("#java").html(text);
+});
+
