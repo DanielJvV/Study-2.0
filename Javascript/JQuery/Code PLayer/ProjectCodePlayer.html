@@ -28,7 +28,8 @@
 
     <div id="html-display" class="display">
         <h2>HTML</h2>
-        <textarea id="html-text"></textarea>
+        <textarea id="html-text"><p id="para">Hello World</p>
+        </textarea>
     </div>
     <div id="css-display" class="display">
         <h2>CSS</h2>
@@ -36,11 +37,13 @@
     </div>
     <div id="java-display" class="display">
         <h2>JAVASCRIPT</h2>
-        <textarea id="java-text"></textarea>
+        <textarea id="java-text">
+            document.getElementById("para").innerHTML = "Hello World!";
+        </textarea>
     </div>
     <div id="output-display" class="display">
         <h2>OUTPUT</h2>
-        <div id="render"></div>
+        <iframe id="render"></iframe>
     </div>
 
     <script src="./ProjectCodePlayer.js"></script>

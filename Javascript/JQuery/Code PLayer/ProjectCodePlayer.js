@@ -12,6 +12,11 @@ const adjustDisplay = function () {
     };
 };
 
+const updateOutput = function () {
+    $("#render").contents().find("html").html("<html><head><style type='text/css'>" + $("#css-text").val() + "</style></head><body>" + $("#html-text").val() + "</body></html>");
+    document.getElementById("render").conentWindow.eval($("#java-text").val());
+};
+
 $("#html-btn").click(function () {
 
     if ($("#html-display").css("display") === "block") {
@@ -64,18 +69,13 @@ $("#output-btn").click(function () {
     adjustDisplay();
 });
 
-$("#html-text").change(function () {
-    const text = $("#html-text").val();
-    $("#render").html(text);
+updateOutput();
+
+$("textarea").on("change keyup paste", function () {
+    updateOutput();
+
 });
 
-$("#css-text").change(function () {
-    const text = $("#css-text").val();
-    $("#style").html(text);
-});
 
-$("#java-text").change(function () {
-    const text = $("#java-text").val();
-    $("#java").html(text);
-});
+
 

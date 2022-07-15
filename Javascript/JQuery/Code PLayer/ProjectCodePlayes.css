@@ -118,4 +118,5 @@ textarea {
 #render {
     width: 98.5%;
     height: 100vh;
+    border: none;
 }
