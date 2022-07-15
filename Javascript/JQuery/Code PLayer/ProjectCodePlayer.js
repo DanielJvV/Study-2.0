@@ -14,7 +14,7 @@ const adjustDisplay = function () {
 
 const updateOutput = function () {
     $("#render").contents().find("html").html("<html><head><style type='text/css'>" + $("#css-text").val() + "</style></head><body>" + $("#html-text").val() + "</body></html>");
-    document.getElementById("render").conentWindow.eval($("#java-text").val());
+    document.getElementById("render").contentWindow.eval($("#java-text").val());
 };
 
 $("#html-btn").click(function () {
