@@ -18,18 +18,33 @@
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
-            height: 500px;
+            height: 400px;
 
+        }
+
+        body {
+            position: relative;
+        }
+
+        .logos {
+            width: 22px;
+            margin-right: 2px;
+        }
+
+        .foot {
+            height: 500px;
+            background-color: aqua;
+            padding: 150px;
         }
     </style>
 
     <title>My APP</title>
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<body data-bs-spy="scroll" data-bs-target="#navbar-example">
+    <nav id="navbar-example" class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">MyApp</a>
+            <a class="navbar-brand fw-bold" href="#">MyApp</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -38,13 +53,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link fw-bold" href="#scrollspyHeading1">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link fw-bold" href="#scrollspyHeading2">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Download The App</a>
+                        <a class="nav-link fw-bold" href="#scrollspyHeading3">Download The App</a>
                     </li>
                 </ul>
                 <form class="d-flex">
@@ -56,17 +71,67 @@
         </div>
     </nav>
 
-    <div class="jumbotron text-center">
-        <h1>My Awesome App!</h1>
-        <p>This is why YOU should download this fantasic app!</p>
-        <hr>
-        <p>Want to know more? Join our mailing list!</p>
-        <div class="input-group w-25 mx-auto">
-            <span class="input-group-text" id="basic-addon1">@</span>
-            <input type="text" class="form-control" placeholder="Your email" aria-label="Email"
-                aria-describedby="basic-addon1">
-            <button type="button" class="btn btn-primary">Sign up</button>
+    <div class="jumbotron text-center" id="scrollspyHeading1">
+        <div class="pt-3">
+            <h1 class="display-1 mb-3">My Awesome App!</h1>
+            <p class="fs-5 mb-4">This is why YOU should download this fantasic app!</p>
+            <hr>
+            <p class="mt-4 fw-bold">Want to know more? Join our mailing list!</p>
+            <div class="input-group w-25 mx-auto">
+                <span class="input-group-text" id="basic-addon1">@</span>
+                <input type="text" class="form-control" placeholder="Your email" aria-label="Email"
+                    aria-describedby="basic-addon1">
+                <button type="button" class="btn btn-primary">Sign up</button>
+            </div>
         </div>
+    </div>
+    <div class="text-center">
+        <h2 class="fs-1 mt-5">Why This App Is Awesome</h2>
+        <p class="fs-5 mb-5">Summary, once again, of your app's awesomeness</p>
+    </div>
+    <div class="container mb-5" id="scrollspyHeading2">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card h-100">
+                    <img src="https://media.istockphoto.com/photos/dad-and-son-outdoors-picture-id997711042?k=20&m=997711042&s=612x612&w=0&h=QVkt16DSimZYzdAZKfcdfx5C8XTbGrBCyTZfVdus-so="
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><img class="logos" src="./images/anchor.png">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card h-100">
+                    <img src="https://media.istockphoto.com/photos/dad-and-son-outdoors-picture-id997711042?k=20&m=997711042&s=612x612&w=0&h=QVkt16DSimZYzdAZKfcdfx5C8XTbGrBCyTZfVdus-so="
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><img class="logos" src="./images/bicycle.png">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content..</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card h-100">
+                    <img src="https://media.istockphoto.com/photos/dad-and-son-outdoors-picture-id997711042?k=20&m=997711042&s=612x612&w=0&h=QVkt16DSimZYzdAZKfcdfx5C8XTbGrBCyTZfVdus-so="
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><img class="logos" src="./images/birthday-cake.png">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This card has even longer content than the first to show that equal
+                            height action</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="foot text-center" id="scrollspyHeading3">
+
+        <h3 class="fs-1">Download the app!</h3>
+        <p class="fs-5">Really, why should I download this app??</p>
+        <img src="./images/Screenshot 2022-08-26 114240.png" alt="">
 
     </div>
 
